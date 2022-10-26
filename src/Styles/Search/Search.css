@@ -2,18 +2,19 @@
   display: grid;
   height: 800px;
   width: 100%;
-  position: relative;
 }
 .main_search .image {
-  height: 500px;
+  display: grid;
+  height: 600px;
   background-image: url("./2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
-.main_search .search_form {
+.main_search .image .search_form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   row-gap: 30px;
-  position: absolute;
 }/*# sourceMappingURL=Search.css.map */

@@ -15,37 +15,35 @@ function Search() {
   };
   return (
     <div className="main_search">
-      <div className="image"></div>
-
-      <div className="search_form">
-        <Box>
-          <Select
-            style={{
-              display: "grid",
-              width: "200px",
-              height: "39px",
-              justifySelf: "end",
-            }}
-            value={region}
-            onChange={handleChange}
-          >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
-          </Select>
-          {/* <FormHelperText>Chose your region</FormHelperText> */}
-        </Box>
-        <Autocomplete
-          className="input"
-          disablePortal
-          size="small"
-          id="combo-box-demo"
-          options={top100Films}
-          sx={{ width: 300 }}
-          renderInput={(params) => (
-            <TextField {...params} label="Find someone" />
-          )}
-        />
+      <div className="image">
+        <div className="search_form">
+          <Box>
+            <Select
+              style={{
+                width: "200px",
+                height: "39px",
+              }}
+              value={region}
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+            {/* <FormHelperText>Chose your region</FormHelperText> */}
+          </Box>
+          <Autocomplete
+            className="input"
+            disablePortal
+            size="small"
+            id="combo-box-demo"
+            options={top100Films}
+            sx={{ width: 300 }}
+            renderInput={(params) => (
+              <TextField {...params} label="Find someone" />
+            )}
+          />
+        </div>
       </div>
     </div>
   );
