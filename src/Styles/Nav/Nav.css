@@ -1,0 +1,33 @@
+.main_header {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.431372549);
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 60px;
+  place-items: center;
+  position: fixed;
+  width: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  z-index: 2;
+}
+.main_header ul {
+  display: grid;
+  justify-self: start;
+  grid-auto-flow: column;
+  list-style: none;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.main_header ul a {
+  text-decoration: none;
+  font-size: 14px;
+}
+.main_header ul a.active {
+  border-bottom: 1px solid red;
+}
+.main_header .buttongroup {
+  height: 22px;
+}
+.main_header .buttongroup button {
+  font-size: 10px;
+}/*# sourceMappingURL=Nav.css.map */

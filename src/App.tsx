@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Search from "./Components/Search";
+import Meeting from "./Components/Meeting";
+import Nav from "./Components/Nav";
+import Contacts from "./Components/Contacts";
+import About from "./Components/About";
+import Specialists from "./Components/Specialists";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Search />
-      {/* <Home /> */}
+      <Nav />
+      <div className="components">
+        <Routes>
+          <Route path="home" index element={<Home />} />
+          <Route path="specialists" element={<Specialists />} />
+          <Route path="meeting" element={<Meeting />} />
+          <Route path="contacts" element={<Contacts />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.main_header
+    display: grid
+    background-color: #ffffff6e
+    grid-template-columns: 1fr 4fr 2fr
+    grid-template-rows: 60px
+    place-items: center
+    position: fixed
+    width: 100%
+    backdrop-filter: blur(4px)
+    z-index: 2
+
+    ul
+        display: grid
+        justify-self: start
+        grid-auto-flow: column
+        list-style: none
+        column-gap: 40px
+        a
+            text-decoration: none
+            font-size: 14px
+        a.active
+            border-bottom: 1px solid red
+    .buttongroup
+        height: 22px
+        button
+            font-size: 10px
