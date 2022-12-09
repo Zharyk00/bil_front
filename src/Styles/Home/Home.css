@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main_search .image {
   height: 500px;
   margin-bottom: 40px;
@@ -26,4 +27,10 @@
 }
 .main_search .swiper .swiper-button-prev:after, .main_search .swiper .swiper-button-next:after {
   font-size: 20px;
+=======
+.main_home .swiper-slide {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+>>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
 }/*# sourceMappingURL=Home.css.map */

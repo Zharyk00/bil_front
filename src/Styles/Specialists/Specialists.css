@@ -1,0 +1,23 @@
+.main_search {
+  display: grid;
+  height: 1000px;
+}
+.main_search .searchs {
+  display: grid;
+  height: 350px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main_search .searchs .MuiBox-root {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+.main_search .searchs .MuiBox-root .select {
+  height: 55px;
+  width: 200px;
+}
+.main_search .searchs .MuiBox-root .MuiFormControl-root {
+  width: 400px;
+  margin-top: 10px;
+}/*# sourceMappingURL=Specialists.css.map */
