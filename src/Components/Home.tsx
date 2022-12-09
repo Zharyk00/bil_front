@@ -1,31 +1,11 @@
 import React, { useState } from "react";
 import "../Styles/Home/Home.css";
-<<<<<<< HEAD
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-=======
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { Autocomplete, FormHelperText, TextField } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-<<<<<<< HEAD
-  EffectCube,
-  Pagination,
-  Autoplay,
-  EffectCards,
-} from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 import "swiper/css";
-import "swiper/css/effect-cube";
-=======
-  Autoplay,
-} from "swiper";
-
-import "swiper/css";
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
 import "swiper/css/navigation";
 
 function Search() {
@@ -36,44 +16,6 @@ function Search() {
   };
   return (
     <div className="main_home">
-<<<<<<< HEAD
-      <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        // slidesPerView={1}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        speed={1000}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        modules={[EffectCube, Pagination, Autoplay]}
-        loop={true}
-        pagination={true}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-      </Swiper>{" "}
-      5
-      <Swiper
-        modules={[Navigation]}
-        loop={true}
-        spaceBetween={5}
-=======
-
       <Swiper
         loop={true}
         speed={1000}
@@ -82,15 +24,39 @@ function Search() {
         modules={[Navigation]}
       >
         <SwiperSlide>
-          <img style={{ maxWidth: "100%", maxHeight: "100%" }} src="https://www.montclair.edu/responsive-media/cache/university-communications/wp-content/uploads/sites/144/2020/04/050713_8369_Campus.jpg.3.2x.generic.jpg" alt="photos" /></SwiperSlide>
+          <img
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            src="https://www.montclair.edu/responsive-media/cache/university-communications/wp-content/uploads/sites/144/2020/04/050713_8369_Campus.jpg.3.2x.generic.jpg"
+            alt="photos"
+          />
+        </SwiperSlide>
         <SwiperSlide>
-          <img style={{ maxWidth: "100%", maxHeight: "100%" }} src="https://villabrandestini.com/images/contact/contact_welcome_background_3.1560202639.jpg" /></SwiperSlide>
+          <img
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            src="https://villabrandestini.com/images/contact/contact_welcome_background_3.1560202639.jpg"
+          />
+        </SwiperSlide>
         <SwiperSlide>
-          <img style={{ maxWidth: "100%", maxHeight: "100%" }} src="https://cdn.shopify.com/s/files/1/1571/4849/collections/Avalana_collection1.jpg?v=1582288218" alt="photos" /></SwiperSlide>
+          <img
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            src="https://cdn.shopify.com/s/files/1/1571/4849/collections/Avalana_collection1.jpg?v=1582288218"
+            alt="photos"
+          />
+        </SwiperSlide>
         <SwiperSlide>
-          <img style={{ maxWidth: "100%", maxHeight: "100%" }} src="https://www.altacrystalresort.com/wp-content/uploads/2022/02/intricate-explorer-_xzx1XZ1taI-unsplash-scaled-e1644540633406-1500x450.jpg" alt="photos" /></SwiperSlide>
+          <img
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            src="https://www.altacrystalresort.com/wp-content/uploads/2022/02/intricate-explorer-_xzx1XZ1taI-unsplash-scaled-e1644540633406-1500x450.jpg"
+            alt="photos"
+          />
+        </SwiperSlide>
         <SwiperSlide>
-          <img style={{ maxWidth: "100%", maxHeight: "100%" }} src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/daytona-beach-resort/media/cache/Daytona-Hero-Daytona-Local-Events-5bd720e7dc441-1500x450.jpg" alt="photos" /></SwiperSlide>
+          <img
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+            src="https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/daytona-beach-resort/media/cache/Daytona-Hero-Daytona-Local-Events-5bd720e7dc441-1500x450.jpg"
+            alt="photos"
+          />
+        </SwiperSlide>
       </Swiper>
 
       <Swiper
@@ -109,7 +75,7 @@ function Search() {
           },
           620: {
             slidesPerView: 3,
-            spaceBetween: 30
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 4,
@@ -123,7 +89,11 @@ function Search() {
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt="image"
           />
-          <p style={{ margin: "0px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga </p>
+          <p style={{ margin: "0px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque
+            fuga{" "}
+          </p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -131,7 +101,11 @@ function Search() {
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt="image"
           />
-          <p style={{ margin: "0px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga </p>
+          <p style={{ margin: "0px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque
+            fuga{" "}
+          </p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -139,7 +113,11 @@ function Search() {
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt="image"
           />
-          <p style={{ margin: "0px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga </p>
+          <p style={{ margin: "0px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque
+            fuga{" "}
+          </p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -147,7 +125,11 @@ function Search() {
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt="image"
           />
-          <p style={{ margin: "0px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga </p>
+          <p style={{ margin: "0px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque
+            fuga{" "}
+          </p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -155,7 +137,11 @@ function Search() {
             src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
             alt="image"
           />
-          <p style={{ margin: "0px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga </p>
+          <p style={{ margin: "0px" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque
+            fuga{" "}
+          </p>
         </SwiperSlide>
       </Swiper>
 
@@ -165,7 +151,6 @@ function Search() {
         loop={true}
         spaceBetween={5}
         speed={700}
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
         breakpoints={{
           300: {
             slidesPerView: 2,
@@ -244,8 +229,4 @@ const top100Films = [
   { label: "The Dark Knight", year: 2008 },
 ];
 
-<<<<<<< HEAD
 export default Search;
-=======
-export default Search;
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172

@@ -1,5 +1,10 @@
-<<<<<<< HEAD
-{"version":3,"sources":["Home.sass","Home.css"],"names":[],"mappings":"AAEI;EACI,aAAA;EACA,mBAAA;EACA,gCAAA;EACA,4BAAA;EACA,4BAAA;EACA,0BAAA;EAEA,aAAA;EACA,2DAAA;EAEA,mBAAA;EACA,oBAAA;ACHR;ADYQ;EACI,YAAA;EACA,aAAA;ACVZ;ADYY;EACI,WAAA;EACA,YAAA;EACA,oBAAA;KAAA,iBAAA;ACVhB;ADcQ;EACI,aAAA;EACA,qBAAA;ACZZ;ADaQ;EACI,eAAA;ACXZ","file":"Home.css"}
-=======
-{"version":3,"sources":["Home.sass","Home.css"],"names":[],"mappings":"AAEQ;EACQ,aAAA;EACA,qBAAA;EACA,mBAAA;ACDhB","file":"Home.css"}
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
+{
+  "version": 3,
+  "sources": [
+    "Home.sass",
+    "Home.css"
+  ],
+  "names": [],
+  "mappings": "AAEQ;EACQ,aAAA;EACA,qBAAA;EACA,mBAAA;ACDhB",
+  "file": "Home.css"
+}
