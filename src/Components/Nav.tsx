@@ -1,20 +1,19 @@
-import { ButtonGroup, Button } from "@mui/material";
-import { red } from "@mui/material/colors";
 import React from "react";
+import { ButtonGroup, Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import "../Styles/Nav/Nav.css";
 
 function Nav() {
     return (
-        <div className="main_header">
+        <nav className="main_header">
             <h2>bilkg</h2>
-            <ul>
+            <section>
                 <NavLink to={"/"}>Home</NavLink>
                 <NavLink to={"/specialists"}>specialists</NavLink>
                 <NavLink to={"/meeting"}>Meeting</NavLink>
                 <NavLink to={"/contacts"}>contacts</NavLink>
                 <NavLink to={"/about"}>about</NavLink>
-            </ul>
+            </section>
 
             <ButtonGroup
                 variant="outlined"
@@ -26,7 +25,7 @@ function Nav() {
                 <Button>Login</Button>
                 <Button>LogOut</Button>
             </ButtonGroup>
-        </div>
+        </nav>
     );
 }
 
