@@ -1,7 +1,54 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+.main_search .image {
+  height: 500px;
+  margin-bottom: 40px;
+  background-image: url("./4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: end;
+}
+.main_search .image .swiper {
+  width: 450px;
+  height: 400px;
+}
+.main_search .image .swiper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main_search .swiper .swiper-slide {
+  display: grid;
+  justify-items: center;
+}
+.main_search .swiper .swiper-button-prev:after, .main_search .swiper .swiper-button-next:after {
+  font-size: 20px;
+=======
+>>>>>>> Kadyrbek00-main
 .main_home .swiper-slide {
   display: grid;
   justify-items: center;
   align-items: center;
+<<<<<<< HEAD
 }
 
 /*# sourceMappingURL=Home.css.map */
+=======
+>>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
+=======
+.main_home .container {
+  padding: 70px 20px 20px 20px;
+  background-color: #f9f744;
+  background-image: linear-gradient(0deg, #f9f744 15%, #2a2828 0%);
+  background-color: #f9e200;
+  background-image: linear-gradient(140deg, #f9e200 48%, #00ccfc 0%);
+>>>>>>> cfffc4f3254c38268da0cca10f089daf127812ee
+}/*# sourceMappingURL=Home.css.map */
+>>>>>>> Kadyrbek00-main

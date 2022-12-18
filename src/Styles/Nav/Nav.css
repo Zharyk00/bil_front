@@ -10,14 +10,32 @@
   backdrop-filter: blur(5px);
   z-index: 2;
 }
+<<<<<<< HEAD
 
 .main_header ul {
+=======
+.main_header section {
+>>>>>>> Kadyrbek00-main
   display: grid;
   justify-self: start;
   grid-auto-flow: column;
+<<<<<<< HEAD
   list-style: none;
   -moz-column-gap: 60px;
+<<<<<<< HEAD
   column-gap: 60px;
 }
 
 /*# sourceMappingURL=Nav.css.map */
+=======
+       column-gap: 60px;
+>>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
+=======
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.main_header section a {
+  color: black;
+>>>>>>> cfffc4f3254c38268da0cca10f089daf127812ee
+}/*# sourceMappingURL=Nav.css.map */
+>>>>>>> Kadyrbek00-main
