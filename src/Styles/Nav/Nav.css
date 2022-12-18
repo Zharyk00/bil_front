@@ -1,41 +1,32 @@
 .main_header {
   display: grid;
-  background-color: rgba(165, 162, 162, 0.5607843137);
+  background-color: rgba(0, 0, 0, 0.2823529412);
   grid-template-columns: 0.7fr 3fr 0.8fr;
   grid-template-rows: 60px;
   place-items: center;
   position: fixed;
   width: 100%;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   z-index: 2;
 }
-<<<<<<< HEAD
-
-.main_header ul {
-=======
 .main_header section {
->>>>>>> Kadyrbek00-main
   display: grid;
   justify-self: start;
   grid-auto-flow: column;
-<<<<<<< HEAD
-  list-style: none;
-  -moz-column-gap: 60px;
-<<<<<<< HEAD
-  column-gap: 60px;
-}
-
-/*# sourceMappingURL=Nav.css.map */
-=======
-       column-gap: 60px;
->>>>>>> 3ea7b6b8a7feb0957a0b698d5274309a19be0172
-=======
   -moz-column-gap: 60px;
        column-gap: 60px;
 }
 .main_header section a {
   color: black;
->>>>>>> cfffc4f3254c38268da0cca10f089daf127812ee
+}
+.main_header section .active {
+  color: #008AA8;
+}
+.main_header .buttongroup {
+  width: auto;
+  height: 20px;
+}
+.main_header .buttongroup button {
+  font-size: 11px;
 }/*# sourceMappingURL=Nav.css.map */
->>>>>>> Kadyrbek00-main

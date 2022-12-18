@@ -1,23 +1,21 @@
 .main_search
     display: grid
-    height: 1000px
+    row-gap: 30px
+    padding-top: 70px
+
+    header
+        font-size: 24px
+        text-align: center
+        font-weight: bold
 
     .searchs
         display: grid
-        height: 350px
+        row-gap: 40px
+        justify-items: center
+        grid-template-columns: repeat(auto-fit , minmax(350px , 1fr))
         // background-image: url("")
         background-repeat: no-repeat
         background-attachment: fixed
 
-        .MuiBox-root
-            display: grid
-            // justify-content: center
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))
-
-            .select
-                height: 55px
-                width: 200px
-
-            .MuiFormControl-root
-                width: 400px
-                margin-top: 10px
+        .MuiAutocomplete-root
+            width: 80%

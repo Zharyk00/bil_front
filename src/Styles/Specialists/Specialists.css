@@ -1,22 +1,21 @@
 .main_search {
   display: grid;
-  height: 1000px;
+  row-gap: 30px;
+  padding-top: 70px;
+}
+.main_search header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
 }
 .main_search .searchs {
   display: grid;
-  height: 350px;
+  row-gap: 40px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.main_search .searchs .MuiBox-root {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-}
-.main_search .searchs .MuiBox-root .select {
-  height: 55px;
-  width: 200px;
-}
-.main_search .searchs .MuiBox-root .MuiFormControl-root {
-  width: 400px;
-  margin-top: 10px;
+.main_search .searchs .MuiAutocomplete-root {
+  width: 80%;
 }/*# sourceMappingURL=Specialists.css.map */

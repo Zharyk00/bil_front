@@ -1,81 +1,71 @@
-import React from "react";
-import {
-  Autocomplete,
-  Box,
-  createFilterOptions,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-  TextField,
-} from "@mui/material";
+import React, { useState } from "react";
+import { Autocomplete, createFilterOptions, TextField } from "@mui/material";
 import "../Styles/Specialists/Specialists.css";
+import Bilkg from "./Store";
+import { observer } from "mobx-react-lite";
 
 function Specialists() {
-  const [region, setRegion] = React.useState("");
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setRegion(event.target.value as string);
-  };
+  const [value, setValue] = React.useState<Object | null>();
+  const [inputValue, setInputValue] = React.useState("");
 
   const filterOptions = createFilterOptions({
     matchFrom: "start",
     stringify: (option: specialistsOptionType) => option.title,
   });
+  const filterRegions = createFilterOptions({
+    matchFrom: "start",
+    stringify: (option: regions): any => option.title,
+  });
 
   return (
-    <div>
-      <div className="main_search">
-        <div className="searchs">
-          <h2>Найти И забронировать</h2>
-          <Box>
-            <FormControl>
-              <InputLabel id="region">Ваш область</InputLabel>
-              <Select
-                className="select"
-                labelId="region"
-                id="region"
-                label="Ваш область"
-                value={region}
-                onChange={handleChange}
-              >
-                {regions.map((item) => (
-                  <MenuItem key={item.value} value={item.value}>
-                    {item.title}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-
-            <Autocomplete
-              options={specialists}
-              getOptionLabel={(option) => option.title}
-              filterOptions={filterOptions}
-              renderInput={(params) => (
-                <TextField {...params} label="Искать специалиста" />
-              )}
-            />
-          </Box>
-        </div>
+    <div className="main_search">
+      <header onClick={() => Bilkg.get()}>Найти И забронировать</header>
+      <div className="searchs">
+        <Autocomplete
+          onChange={(event: any, newValue: Object | null) => {
+            setValue(newValue);
+          }}
+          inputValue={inputValue}
+          onInputChange={(event, newInputValue) => {
+            setInputValue(newInputValue);
+          }}
+          options={region}
+          getOptionLabel={(option) => option.title}
+          filterOptions={filterRegions}
+          renderInput={(params) => (
+            <TextField {...params} label="choose region" />
+          )}
+        />
+        <Autocomplete
+          options={specialists}
+          getOptionLabel={(option) => option.title}
+          filterOptions={filterOptions}
+          renderInput={(params) => (
+            <TextField {...params} label="Искать специалиста" />
+          )}
+        />
       </div>
     </div>
   );
 }
 
-const regions = [
-  { title: "Ош", value: 1 },
-  { title: "Чуй", value: 2 },
-  { title: "Жала-Абад", value: 3 },
-  { title: "Ысык-Кол", value: 4 },
-  { title: "Баткен", value: 5 },
-  { title: "Нарын", value: 6 },
-  { title: "Талас", value: 7 },
+type regions = {
+  title: string;
+};
+
+const region = [
+  { title: "Ош" },
+  { title: "Чуй" },
+  { title: "Жала-Абад" },
+  { title: "Ысык-Кол" },
+  { title: "Баткен" },
+  { title: "Нарын" },
+  { title: "Талас" },
 ];
 
-interface specialistsOptionType {
+type specialistsOptionType = {
   title: string;
-}
+};
 
 const specialists = [
   { title: "Dentist" },
@@ -86,4 +76,4 @@ const specialists = [
   { title: "Кожный" },
 ];
 
-export default Specialists;
+export default observer(Specialists);
