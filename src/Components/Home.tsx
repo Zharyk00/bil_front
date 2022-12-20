@@ -67,9 +67,9 @@ function Home() {
                 <img
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   src={subI.srcImg}
-                  alt="Img"
+                  alt="someimage"
                 />
-                {/* <p style={{ margin: "0px" }}>{subI.title}</p> */}
+                <p style={{ margin: "0px", fontSize: "12px" }}>{subI.title}</p>
               </SwiperSlide>
             );
           })}

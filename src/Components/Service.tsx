@@ -31,43 +31,37 @@ export let submain = [
     id: 5,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
   {
     id: 6,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
   {
     id: 7,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
   {
     id: 8,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
   {
     id: 9,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
   {
     id: 10,
     srcImg:
       "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-    title:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deserunt amet fuga aperiam unde! Assumenda voluptate sapiente neque fuga",
+    title: "Voluptate sapiente neque fuga",
   },
 ];
 
